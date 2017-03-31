@@ -1,6 +1,5 @@
 syntax on
 set number
-set cursorline
 "
 "tab view setting
 set tabstop=2

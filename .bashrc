@@ -131,18 +131,9 @@ alias chrome='google-chrome-stable'
 # set environment variable
 export EDITOR='vi'
 
-# for ros system
-#ROS_CATKIN_WS="${HOME}/ws/ros/ws"
-ROS_CATKIN_WS="${HOME}/ws/ros/cirkit_unit03_catkin_tester"
-#ROS_CATKIN_WS="${HOME}/ws/ros/arcsys2"
-#ROS_CATKIN_WS="${HOME}/ws/ros/fifth_robot_pkg"
-
-ROS_REQUIRE_FILE="${ROS_CATKIN_WS}/devel/setup.bash"
-source /opt/ros/kinetic/setup.bash
-source ${ROS_REQUIRE_FILE}
-alias cdc='cd ${ROS_CATKIN_WS}'
-alias tf2='cd /var/tmp && rosrun tf2_tools view_frames.py && evince frames.pdf; cd -'
-alias cm='cd ${ROS_CATKIN_WS} && source ${ROS_REQUIRE_FILE} && catkin_make; cd -'
-
 # original shell script
 alias srcd='cd `oversrc`';
+
+# mac completion
+. /usr/local/etc/bash_completion.d/git-prompt.sh
+. /usr/local/etc/bash_completion.d/git-completion.bash
