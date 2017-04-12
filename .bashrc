@@ -137,3 +137,7 @@ alias srcd='cd `oversrc`';
 # mac completion
 . /usr/local/etc/bash_completion.d/git-prompt.sh
 . /usr/local/etc/bash_completion.d/git-completion.bash
+
+# mac vim
+export PATH=$PATH:/Applications/MacVim.app/Contents/MacOS
+alias mvi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
