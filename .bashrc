@@ -135,8 +135,9 @@ export EDITOR='vi'
 alias srcd='cd `oversrc`';
 
 # mac completion
-. /usr/local/etc/bash_completion.d/git-prompt.sh
-. /usr/local/etc/bash_completion.d/git-completion.bash
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
 
 # mac vim
 export PATH=$PATH:/Applications/MacVim.app/Contents/MacOS
