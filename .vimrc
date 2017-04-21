@@ -11,9 +11,11 @@ set expandtab
 if expand("%:r") == 'Makefile'
   set noexpandtab
 endif
-"auto indent
+" auto indent
 set autoindent
 set smartindent
 " paste setting
 set pastetoggle=<F2>
-"
+" backup file
+set nobackup
+set noundofile
