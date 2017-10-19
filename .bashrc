@@ -126,9 +126,13 @@ alias cdr='cd ~/ws/ros'
 alias cdm='cd ~/ws/memo'
 alias ks='ls'
 alias sl='ls'
-alias openpdf='evince'
 alias chrome='google-chrome-stable'
 # set environment variable
 export EDITOR='vi'
 # original shell script
-alias srcd='cd `oversrc`';
+alias srcd='cd `oversrc`'
+
+# compiler setting
+export CXX='clang++'
+export CC='clang'
+export CMAKE_ROOT='/usr/local/share/cmake-3.9'
