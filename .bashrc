@@ -125,7 +125,6 @@ alias cdt='cd ~/ws/prog/test'
 alias cdr='cd ~/ws/ros'
 alias cdm='cd ~/ws/memo'
 alias ks='ls'
-alias sl='ls'
 alias chrome='google-chrome-stable'
 # set environment variable
 export EDITOR='vi'
